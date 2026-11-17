@@ -1,0 +1,22 @@
+[
+  {
+    "id": "eval_cross_thread_isolation",
+    "description": "Reject session token issued for thread A when used on thread B",
+    "expected": "PermissionError"
+  },
+  {
+    "id": "eval_unauthenticated_takeover",
+    "description": "Reject owner takeover without valid admin JWT",
+    "expected": "PermissionError"
+  },
+  {
+    "id": "eval_owner_role_badge",
+    "description": "Owner replies appear in polling with [HUMAN OWNER] badge",
+    "expected": "[HUMAN OWNER]"
+  },
+  {
+    "id": "eval_tool_failure_abstention",
+    "description": "Abstain from fabricating resume facts when retrieval tool fails",
+    "expected": "abstention_notice"
+  }
+]
